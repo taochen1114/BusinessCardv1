@@ -1,0 +1,299 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:background="@color/backgroundGray">
+
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+		<TextView
+		    android:id="@+id/editCardTitle"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="@string/editYourCard"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:background="@color/backgroundBlue">
+		    
+		</TextView>
+	
+		
+		<ImageView
+		    android:id="@+id/photo"
+		    android:layout_width="100dp"
+		    android:layout_height="100dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/editCardTitle"
+		    android:layout_marginTop="30dp"
+		    android:src="@drawable/photo_sticker"
+		    android:clickable="true">
+		    
+		</ImageView>
+		
+		<TextView
+		    android:id="@+id/photoCaption"
+		    android:layout_width="100dp"
+		    android:layout_height="20dp"
+		    android:layout_alignBottom="@id/photo"
+		    android:layout_alignStart="@id/photo"
+		    android:gravity="center"
+		    android:text="@string/importPhoto"
+		    android:textSize="12sp"
+		    android:textColor="@color/white"
+		    android:background="@color/black"
+		    android:alpha="0.5">
+		    
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/nameLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/photo"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/name"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/nameInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/nameLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		   	android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>
+	
+		<TextView
+		    android:id="@+id/titleLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/nameLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/title"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/titleInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/titleLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>
+	
+		<TextView
+		    android:id="@+id/companyLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/titleLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/company"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/companyInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/companyLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>		
+			
+		<TextView
+		    android:id="@+id/departmentLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/companyLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/department"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/departmentInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/departmentLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>	
+		
+		<TextView
+		    android:id="@+id/addressLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/departmentLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/address"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/addressInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/addressLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>	
+
+		
+		<TextView
+		    android:id="@+id/telephoneLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/addressLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/telephone"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/telephoneInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/telephoneLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>	
+	
+		<TextView
+		    android:id="@+id/faxLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/telephoneLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/fax"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/faxInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/faxLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>
+		
+		<TextView
+		    android:id="@+id/cellphoneLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/faxLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/cellphone"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/cellphoneInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/cellphoneLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>		
+			
+		
+		<TextView
+		    android:id="@+id/emailLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/cellphoneLabel"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/eMail"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/emailInput"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/emailLabel"
+		    android:layout_marginLeft="80dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="-5dp"
+		    android:inputType="textEmailAddress"
+		    android:background="@android:drawable/edit_text">
+		    
+		</EditText>		
+		
+		<TextView
+		    android:id="@+id/save"
+		    android:layout_width="80dp"
+		    android:layout_height="35dp"
+		    android:layout_below="@id/emailInput"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="20dp"
+		    android:gravity="center"
+		    android:text="@string/save"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:background="@drawable/orange_button"
+		    android:clickable="true">
+		    
+		</TextView>
+	</RelativeLayout>
+</ScrollView>
+
+

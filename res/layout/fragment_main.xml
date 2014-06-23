@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:gravity="center"
+    tools:context="com.oop.businesscard.MainActivity$PlaceholderFragment" >
+
+    
+    <RelativeLayout
+        android:id="@+id/contentWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:id="@+id/myCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp">
+            
+            <ImageButton
+                android:id="@+id/myCardBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/menu_my_card">
+                
+            </ImageButton>
+            
+            <TextView
+                android:id="@+id/myCardCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myCardBtn"
+                android:layout_marginTop="5dp"
+                android:text="@string/myCard"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true">          
+            </TextView>
+            
+                
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toRightOf="@id/myCard">
+            
+            <ImageButton
+                android:id="@+id/editCardBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/menu_editting">
+                
+            </ImageButton>
+            
+            <TextView
+                android:id="@+id/editCardCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editCardBtn"
+                android:layout_marginTop="5dp"
+                android:text="@string/editCard"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true">          
+            </TextView>
+            
+                
+        </RelativeLayout>  
+        
+        <RelativeLayout
+            android:id="@+id/browseCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myCard"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+            
+            <ImageButton
+                android:id="@+id/browseCardsBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/menu_cardlist">
+                
+            </ImageButton>
+            
+            <TextView
+                android:id="@+id/browseCardsCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/browseCardsBtn"
+                android:layout_marginTop="5dp"
+                android:text="@string/browseCards"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true">          
+            </TextView>
+            
+                
+        </RelativeLayout>    
+            
+        <RelativeLayout
+            android:id="@+id/exchangeCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/browseCards"
+            android:layout_below="@id/editCard"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp">
+            
+            <ImageButton
+                android:id="@+id/exchangeCardBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/menu_exchange">
+                
+            </ImageButton>
+            
+            <TextView
+                android:id="@+id/exchangeCardCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exchangeCardBtn"
+                android:layout_marginTop="5dp"
+                android:text="@string/exchangeCard"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true">          
+            </TextView>
+            
+                
+        </RelativeLayout></RelativeLayout>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/contentWrapper"
+        android:layout_below="@+id/contentWrapper"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/blue_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+  
+</RelativeLayout>

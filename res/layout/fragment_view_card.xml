@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context="com.oop.businesscard.EditCardActivity$PlaceholderFragment" >
+
+    
+    
+    
+	<HorizontalScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">    
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    
+		    <RelativeLayout
+		        android:layout_width="500dp"
+		        android:layout_height="300dp">
+	    
+		        <ImageView
+		            android:id="@+id/cardBackground"
+		            android:layout_width="500dp"
+		            android:layout_height="300dp"
+		            android:layout_centerInParent="true"
+		            android:src="@drawable/background_card_new">
+		            
+		        </ImageView>
+		        
+		    
+		        
+		        <TextView
+		            android:id="@+id/name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp"
+		            android:layout_marginLeft="130dp"
+		            android:layout_alignTop="@id/cardBackground"
+		            android:layout_alignLeft="@id/cardBackground"
+		            android:text="Jay Liang"
+		            android:textColor="@color/black"
+		            android:textSize="22sp">
+		                
+		        </TextView>
+		        
+		        <ImageView
+		            android:id="@+id/seperator"
+		            android:layout_width="200dp"
+		            android:layout_height="2dp"
+		            android:layout_below="@id/name"
+		            android:layout_alignLeft="@id/cardBackground"
+		            android:layout_marginLeft="110dp"
+		            android:src="@color/darkGreen">
+		            
+		        </ImageView>
+		        
+		        <TextView
+		            android:id="@+id/title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/seperator"
+		            android:layout_toRightOf="@id/name"
+		            android:text="CIO"
+		            android:textColor="@color/black"
+		            android:textSize="22sp">
+		            
+		        </TextView>
+		        
+		        <ImageView
+		            android:id="@+id/photo"
+		            android:layout_width="120dp"
+		            android:layout_height="90dp"
+		            android:layout_below="@id/seperator"
+		            android:layout_marginTop="40dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_alignStart="@id/seperator"
+		            android:src="@drawable/jay_liang">
+		            
+		        </ImageView>
+		        
+		        <ImageView
+		            android:id="@+id/telephoneIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_below="@id/photo"
+		            android:layout_alignStart="@id/seperator"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="15dp"
+		            android:src="@drawable/card_telephone">
+		            
+		        </ImageView>
+		        
+		        <TextView
+		            android:id="@+id/telephone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/telephoneIcon"
+		            android:layout_alignBottom="@id/telephoneIcon"
+		            android:layout_marginLeft="5dp"
+		            android:text="(02)2739-6731"
+		            android:textSize="12sp"
+		            android:textColor="@color/black">
+		            
+		        </TextView>
+		        
+		        <ImageView
+		            android:id="@+id/cellphoneIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_below="@id/telephoneIcon"
+		            android:layout_alignStart="@id/seperator"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+					android:src="@drawable/card_cellphone">
+		            
+		        </ImageView>
+		        
+		        
+		        <TextView
+		            android:id="@+id/cellphone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/cellphoneIcon"
+		            android:layout_alignBottom="@id/cellphoneIcon"
+		            android:layout_marginLeft="5dp"
+		            android:text="0988-123-987"
+		            android:textColor="@color/black"
+		            android:textSize="12sp">
+		            
+		        </TextView>
+		
+		        <ImageView
+		            android:id="@+id/emailIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_below="@id/cellphoneIcon"
+		            android:layout_alignStart="@id/seperator"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:src="@drawable/card_email">
+		            
+		        </ImageView>
+		        
+		        <TextView
+		            android:id="@+id/email"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/emailIcon"
+		            android:layout_alignBottom="@id/emailIcon"
+		            android:layout_marginLeft="5dp"
+		            android:text="roackb2@gmail.com"
+		            android:textSize="12sp"
+		            android:textColor="@color/black">
+		            
+		        </TextView>
+		        
+		        <ImageView
+		            android:id="@+id/addressIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_below="@id/emailIcon"
+		            android:layout_alignStart="@id/seperator"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:src="@drawable/card_address">
+		            
+		        </ImageView>
+		        
+		        <TextView
+		            android:id="@+id/address"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/addressIcon"
+		            android:layout_alignBottom="@id/addressIcon"
+		            android:layout_marginLeft="5dp"
+		            android:text="台北市大安區羅斯福路四段1號"
+		            android:textColor="@color/black"
+		            android:textSize="12sp">
+		            
+		        </TextView>
+		        
+		        <RelativeLayout
+		            android:id="@+id/companyBlock"
+		            android:layout_width="match_parent"
+		            android:layout_height="50dp"
+		            android:layout_marginLeft="50dp"
+		            android:layout_toRightOf="@id/photo"
+		            android:layout_alignBottom="@id/photo"
+		            android:layout_alignEnd="@id/cardBackground"
+		            android:background="@drawable/company_background">
+		            
+		            <TextView
+		                android:id="@+id/company"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="5dp"
+		                android:text="Somer國際股份有限公司"
+		                android:textColor="@color/white"
+		                android:textSize="14sp">
+		                
+		            </TextView>
+		            
+		            <TextView
+		                android:id="@+id/department"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentBottom="true"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="10dp"
+		                android:layout_marginBottom="5dp"
+		                android:text="台灣總公司"
+		                android:textSize="12sp"
+		                android:textColor="@color/white">
+		                
+		            </TextView>
+		            
+		        </RelativeLayout>
+		        
+		        <ImageView
+		            android:id="@+id/faxIcon"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toRightOf="@id/telephoneIcon"
+		            android:layout_alignBottom="@id/telephoneIcon"
+		            android:layout_marginLeft="200dp"
+		            android:src="@drawable/card_fax">
+		            
+		        </ImageView>
+		        
+		       <TextView
+		           android:id="@+id/fax"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_toRightOf="@id/faxIcon"
+		           android:layout_alignBottom="@id/faxIcon"
+		           android:layout_marginLeft="5dp"
+		           android:text="(02)8947-5188"
+		           android:textColor="@color/black"
+		           android:textSize="12sp">
+		           
+		       </TextView>
+	       </RelativeLayout>
+	    </ScrollView>
+	</HorizontalScrollView>
+</RelativeLayout>

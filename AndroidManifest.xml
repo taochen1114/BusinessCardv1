@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oop.businesscard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name="com.oop.businesscard.BusinessCardApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.oop.businesscard.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.ViewCardActivity"
+            android:label="@string/title_activity_edit_card" >
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.EditCardActivity"
+            android:label="@string/title_activity_edit_card" >
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.ExchangeCardActivity"
+            android:label="@string/title_activity_exchange_card" >
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.BrowseCardActivity"
+            android:label="@string/title_activity_browse_card" >
+        </activity>
+        <activity
+            android:name="com.oop.businesscard.ExchangeCardv2Activity"
+            android:label="@string/title_activity_exchange_cardv2" >
+        </activity>
+    </application>
+
+</manifest>

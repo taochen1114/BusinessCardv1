@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ListView android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+        />
+        <Button android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+        />
+    </LinearLayout>
+</LinearLayout>
+    
+ 
+
+<!--  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray" >
+
+
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+		<TextView
+		    android:id="@+id/exchangeCardWithOthersTitle"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center"
+		    android:text="@string/exchangeCardWithOthers"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:background="@color/backgroundBlue">
+		    
+		</TextView>
+	
+		<TextView
+		    android:id="@+id/clickBlueToothLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/exchangeCardWithOthersTitle"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/clickBluetoothBtn"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<ImageView
+		    android:id="@+id/bluetoothPhoto"
+		    android:layout_width="120dp"
+		    android:layout_height="120dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/clickBlueToothLabel"
+		    android:layout_marginTop="30dp"
+		    android:src="@drawable/bluetooth"
+		    android:clickable="true">
+		    
+		</ImageView>
+		
+		<ImageView
+		    android:id="@+id/bluetoothCardPhoto1"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_toLeftOf="@id/bluetoothPhoto"
+		    android:layout_below="@id/clickBlueToothLabel"
+		    android:layout_marginTop="65dp"
+		    android:layout_marginRight="25dp"
+		    android:src="@drawable/bluetoothcard"
+		    android:clickable="true">
+		    
+		</ImageView>
+		
+		<ImageView
+		    android:id="@+id/bluetoothCardPhoto2"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_toRightOf="@id/bluetoothPhoto"
+		    android:layout_below="@id/clickBlueToothLabel"
+		    android:layout_marginTop="65dp"
+		    android:layout_marginLeft="25dp"
+		    android:src="@drawable/bluetoothcard"
+		    android:clickable="true">
+		    
+		</ImageView>
+		<TextView
+		    android:id="@+id/clickBlueToothLabel2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/bluetoothPhoto"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/shareCardWithBlueTooth"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/clickBlueToothLabel3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/clickBlueToothLabel2"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/shareToFriends"
+		    android:textColor="@color/black"
+		    android:textSize="22sp">
+		    
+		</TextView>
+		
+ 
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ListView android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+        />
+        <Button android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+        />
+    </LinearLayout>
+</LinearLayout>
+
+	
+	</RelativeLayout>
+
+</RelativeLayout>
+
+
+
+-->

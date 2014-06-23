@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/exchangeCardWithOthersTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/backgroundBlue"
+            android:gravity="center"
+            android:text="@string/exchangeCardWithOthers"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/clickBlueToothLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exchangeCardWithOthersTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/clickBluetoothBtn"
+            android:textColor="@color/black"
+            android:textSize="22sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/bluetoothPhoto"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/clickBlueToothLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bluetooth" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/bluetoothCardPhoto1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/clickBlueToothLabel"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="65dp"
+            android:layout_toLeftOf="@id/bluetoothPhoto"
+            android:src="@drawable/bluetoothcard" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/bluetoothCardPhoto2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/clickBlueToothLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="65dp"
+            android:layout_toRightOf="@id/bluetoothPhoto"
+            android:src="@drawable/bluetoothcard" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/clickBlueToothLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bluetoothPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/shareCardWithBlueTooth"
+            android:textColor="@color/black"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/clickBlueToothLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clickBlueToothLabel2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/shareToFriends"
+            android:textColor="@color/black"
+            android:textSize="22sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonForImageView"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/bluetoothCardPhoto2"
+            android:text="@string/connectBluetoothDevice" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
