@@ -3,6 +3,7 @@ package com.oop.businesscard;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -10,6 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 import android.os.Build;
 
 public class BrowseCardActivity extends ActionBarActivity {
@@ -49,9 +53,29 @@ public class BrowseCardActivity extends ActionBarActivity {
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
-	public static class PlaceholderFragment extends Fragment {
+	public static class PlaceholderFragment extends ListFragment {
+		
+		public String[] arr = new String[]{
+				"A","B","C","D","E","F","G","H","I","J","K","L","M","N"
+		        };
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			
+			// TODO Auto-generated method stub
+			super.onCreate(savedInstanceState);
+
+			ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,arr);
+			setListAdapter(adapter);
+		 }
 
 		public PlaceholderFragment() {
+		}
+		
+		@Override
+		public void onListItemClick(ListView l, View v, int position, long id) {
+		    // TODO Auto-generated method stub
+		    super.onListItemClick(l, v, position, id);
+		    Toast.makeText(getActivity(), "你按下"+arr[position], Toast.LENGTH_SHORT).show();
 		}
 
 		@Override
